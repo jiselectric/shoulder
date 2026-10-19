@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="540" viewBox="0 0 1100 540" role="img" aria-labelledby="title desc">
+  <title id="title">Shoulder: turn a selected passage into an unsent side question</title>
+  <desc id="desc">Illustrative three-step workflow. Read a main terminal answer, select a passage and press e, then edit a separate side conversation's unsent draft. The main conversation keeps its place. Nothing is submitted automatically.</desc>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .ink { fill: #e7edf3; } .muted { fill: #9aa9ba; } .cyan { fill: #7ddde7; }
+    .eyebrow { font-size: 15px; letter-spacing: 1.6px; font-weight: 600; }
+    .heading { font-size: 30px; letter-spacing: -1.1px; font-weight: 600; }
+    .label { font-size: 18px; font-weight: 600; } .body { font-size: 18px; }
+    .small { font-size: 16px; }
+  </style>
+  <rect width="1100" height="540" rx="20" fill="#0d131b"/>
+  <text x="42" y="47" class="eyebrow cyan">SHOULDER / HOW IT WORKS</text>
+  <text x="42" y="93" class="heading ink">A side question. Your main thread stays put.</text>
+  <text x="42" y="128" class="body muted">A passage becomes a draft. You decide when to send it.</text>
+
+  <rect x="42" y="170" width="300" height="267" rx="13" fill="#151f2b" stroke="#2b3949"/>
+  <circle cx="66" cy="198" r="4" fill="#7ddde7"/>
+  <text x="81" y="204" class="label ink">1  Read the main answer</text>
+  <path d="M42 226H342" stroke="#2b3949"/>
+  <text x="62" y="267" class="body muted">A small cache keeps</text>
+  <text x="62" y="295" class="body muted">repeated lookups</text>
+  <rect x="57" y="311" width="270" height="35" rx="5" fill="#203e49"/>
+  <text x="62" y="335" class="body ink">off the critical path.</text>
+  <text x="62" y="399" class="small muted">Main keeps its place.</text>
+
+  <path d="M355 304H385M377 297L385 304L377 311" fill="none" stroke="#648492" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="398" y="170" width="279" height="267" rx="13" fill="#151f2b" stroke="#2b3949"/>
+  <circle cx="422" cy="198" r="4" fill="#7ddde7"/>
+  <text x="437" y="204" class="label ink">2  Select a passage</text>
+  <path d="M398 226H677" stroke="#2b3949"/>
+  <rect x="418" y="259" width="239" height="82" rx="7" fill="#203e49" stroke="#3b7280"/>
+  <text x="434" y="289" class="body cyan">off the</text>
+  <text x="434" y="317" class="body cyan">critical path.</text>
+  <text x="418" y="377" class="body ink">Drag the text.</text>
+  <text x="418" y="405" class="body ink">Then press <tspan class="cyan" font-weight="600">e</tspan>.</text>
+
+  <path d="M690 304H720M712 297L720 304L712 311" fill="none" stroke="#648492" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="733" y="170" width="325" height="267" rx="13" fill="#151f2b" stroke="#3b7280"/>
+  <circle cx="757" cy="198" r="4" fill="#7ddde7"/>
+  <text x="772" y="204" class="label ink">3  Explore in a side chat</text>
+  <path d="M733 226H1058" stroke="#2b3949"/>
+  <text x="753" y="262" class="small muted">Quoted passage + your question</text>
+  <text x="753" y="304" class="body ink">Why is this path</text>
+  <text x="753" y="332" class="body ink">critical?</text>
+  <rect x="854" y="316" width="2" height="20" fill="#7ddde7"/>
+  <rect x="753" y="372" width="238" height="34" rx="6" fill="#203e49"/>
+  <text x="765" y="395" class="small cyan">Draft · not submitted</text>
+
+  <path d="M42 473H1058" stroke="#263444"/>
+  <circle cx="49" cy="506" r="4" fill="#7ddde7"/>
+  <text x="65" y="512" class="body ink">Nothing is submitted automatically.</text>
+  <text x="725" y="512" class="small muted">Uses your installed native CLI.</text>
+</svg>

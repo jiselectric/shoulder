@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="660" viewBox="0 0 1100 660" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrative Shoulder main and side terminal layout</title>
+  <desc id="desc">An illustration, not a screenshot. The main pane contains an answer with a selected sentence about cache lifetime. The side pane contains that quote and an unsent question asking what determines the lifetime. Controls show drag and e, Clear side, Close side, Ctrl plus backslash to focus panes, and Ctrl plus Q to close or reopen. Nothing is submitted automatically.</desc>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .ink { fill: #e7edf3; } .muted { fill: #9aa9ba; } .cyan { fill: #7ddde7; }
+    .eyebrow { font-size: 14px; letter-spacing: 1.6px; font-weight: 600; }
+    .heading { font-size: 30px; letter-spacing: -1px; font-weight: 600; }
+    .body { font-size: 19px; } .small { font-size: 16px; }
+    .label { font-size: 18px; font-weight: 600; }
+  </style>
+  <rect width="1100" height="660" rx="20" fill="#0d131b"/>
+  <text x="38" y="44" class="eyebrow cyan">ILLUSTRATIVE TERMINAL / NOT A SCREENSHOT</text>
+  <text x="38" y="88" class="heading ink">Explore the detail beside the answer.</text>
+
+  <rect x="38" y="121" width="1024" height="451" rx="13" fill="#151f2b" stroke="#3a4b5e"/>
+  <path d="M51 121H1049Q1062 121 1062 134V162H38V134Q38 121 51 121Z" fill="#1c2836"/>
+  <circle cx="61" cy="142" r="5" fill="#647587"/>
+  <circle cx="80" cy="142" r="5" fill="#647587"/>
+  <circle cx="99" cy="142" r="5" fill="#647587"/>
+  <text x="124" y="148" class="small muted">shoulder · your native CLI</text>
+  <path d="M38 162H1062M653 162V521M38 521H1062" stroke="#3a4b5e"/>
+
+  <text x="61" y="197" class="label ink">Main</text>
+  <text x="676" y="197" class="label cyan">Side chat</text>
+  <text x="61" y="244" class="body ink">A cache can make repeated lookups faster.</text>
+  <text x="61" y="274" class="body ink">Choose an expiry that fits your data.</text>
+  <rect x="56" y="294" width="578" height="36" rx="4" fill="#203e49"/>
+  <text x="61" y="319" class="body cyan">Keep its lifetime short when inputs change.</text>
+  <text x="61" y="364" class="body muted">This avoids serving stale results.</text>
+  <text x="61" y="437" class="body muted">›</text>
+  <text x="84" y="437" class="body muted">Your next main question…</text>
+  <text x="61" y="492" class="small muted">Your main conversation stays here.</text>
+
+  <text x="676" y="236" class="small muted">Quoted passage</text>
+  <rect x="676" y="252" width="362" height="84" rx="7" fill="#20313d"/>
+  <path d="M676 259V329" stroke="#7ddde7" stroke-width="2"/>
+  <text x="692" y="283" class="body ink">Keep its lifetime short</text>
+  <text x="692" y="313" class="body ink">when inputs change.</text>
+  <text x="676" y="375" class="small muted">My question:</text>
+  <text x="676" y="408" class="body ink">What should determine</text>
+  <text x="676" y="438" class="body ink">the cache lifetime?</text>
+  <rect x="897" y="421" width="2" height="21" fill="#7ddde7"/>
+  <rect x="676" y="465" width="156" height="30" rx="5" fill="#203e49"/>
+  <text x="688" y="485" class="small cyan">UNSENT DRAFT</text>
+  <text x="846" y="485" class="small muted">Edit, then submit.</text>
+
+  <text x="61" y="553" class="small muted">drag + <tspan class="cyan" font-weight="600">e</tspan></text>
+  <text x="181" y="553" class="small ink">[Clear side]</text>
+  <text x="338" y="553" class="small cyan">[Close side]</text>
+  <text x="676" y="553" class="small muted">Nothing sent automatically.</text>
+
+  <text x="38" y="615" class="label cyan">Ctrl+\</text>
+  <text x="122" y="615" class="small ink">focus panes</text>
+  <path d="M284 599V621" stroke="#3a4b5e"/>
+  <text x="313" y="615" class="label cyan">Ctrl+Q</text>
+  <text x="399" y="615" class="small ink">close / reopen</text>
+  <text x="818" y="615" class="small muted">Codex shortcuts</text>
+</svg>

@@ -1,0 +1,64 @@
+{
+  "name": "shldr",
+  "version": "0.1.0-alpha.17",
+  "description": "Explore side questions beside your native Codex terminal, with selected passages and source context.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "keywords": [
+    "shoulder",
+    "codex",
+    "tmux",
+    "terminal",
+    "cli"
+  ],
+  "bin": {
+    "shoulder": "dist/cli.js",
+    "shldr": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "docs/compatibility.md",
+    "docs/verification.md",
+    "docs/release.md",
+    "SECURITY.md",
+    "PRIVACY.md",
+    "README.md",
+    "LICENSE",
+    "docs/assets"
+  ],
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist', {recursive:true, force:true})\" && tsc && node -e \"require('node:fs').chmodSync('dist/cli.js', 0o755)\"",
+    "check": "tsc --noEmit",
+    "test": "npm run build && node --test --test-concurrency=4 test/*.test.mjs",
+    "prepack": "npm run build",
+    "package:smoke": "node scripts/package-smoke.mjs",
+    "benchmark": "npm run build && node scripts/benchmark.mjs && node scripts/context-benchmark.mjs",
+    "verify:context": "npm run build && node scripts/verify-context.mjs",
+    "verify:stress": "npm run build && node scripts/stress.mjs",
+    "release:check": "npm run check && npm test && npm run package:smoke && npm run benchmark && npm pack --dry-run",
+    "verify:stress:header": "npm run build && node scripts/stress-header.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiselectric/shoulder.git"
+  },
+  "homepage": "https://github.com/jiselectric/shoulder#readme",
+  "bugs": {
+    "url": "https://github.com/jiselectric/shoulder/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "alpha"
+  }
+}
